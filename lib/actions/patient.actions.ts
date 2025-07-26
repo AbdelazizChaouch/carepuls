@@ -2,6 +2,10 @@
 
 import { ID, InputFile, Query } from "node-appwrite";
 
+import { 
+  STATIC_PATIENTS, 
+  getPatientByUserId
+} from "../../constants/staticData";
 import {
   API_KEY,
   BUCKET_ID,
@@ -13,11 +17,6 @@ import {
   storage,
   users,
 } from "../appwrite.config";
-import { 
-  STATIC_PATIENTS, 
-  getPatientByUserId, 
-  getRandomPatient 
-} from "../../constants/staticData";
 import { parseStringify } from "../utils";
 
 // CREATE APPWRITE USER

@@ -5,6 +5,11 @@ import { ID, Query } from "node-appwrite";
 
 import { Appointment } from "@/types/appwrite.types";
 
+import { 
+  STATIC_APPOINTMENT_STATS, 
+  createDemoAppointment,
+  STATIC_APPOINTMENTS 
+} from "../../constants/staticData";
 import {
   API_KEY,
   APPOINTMENT_COLLECTION_ID,
@@ -14,11 +19,6 @@ import {
   databases,
   messaging,
 } from "../appwrite.config";
-import { 
-  STATIC_APPOINTMENT_STATS, 
-  createDemoAppointment,
-  STATIC_APPOINTMENTS 
-} from "../../constants/staticData";
 import { formatDateTime, parseStringify } from "../utils";
 
 //  CREATE APPOINTMENT
